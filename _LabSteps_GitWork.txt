@@ -1,0 +1,56 @@
+# 作業繳交流程
+
+
+
+
+1. 老師於臉書班版公佈作業
+
+   錢老師指定家庭作業時，會在臉書班版公佈家庭作業網址，例如:
+   https://classroom.github.com/assignment-invitations/c009fa3e334d0baffff15073d1743eb0
+
+
+
+
+2. 同學下載作業檔案
+
+
+2.1 同學登入 http://github.com
+
+
+2.2 複製貼上家庭作業網址到瀏覽器的網址列
+
+
+2.3 點按 "Accept this assignment" 接受作業。
+
+   <Note> 本步驟會建立一個你專屬的數據庫(respository)，
+   請記下畫面最後一行的網址。格式如下:
+   Your assignment has been created here: https://github.com/wgpd01/...
+
+
+2.4 在 c9.io 的 workspace，功能表 Windows | New Terminal，輸入:
+git clone <步驟 2.3 記下的網址> 例如:
+git clone https://github.com/wgpd01/hwlab-stdnt25
+   
+   <Note>以本例來說，c9工作環境會多出一個 hwlab-stdnt25 作業資料夾
+
+
+
+3. 完成你的作業。
+
+
+
+
+4. 上傳你的作業
+
+
+4.1 在 c9.io 滑鼠右鍵點按你的作業資料夾 | New Terminal Here，
+    輸入下列指令:
+git add .
+git commit -m "說明事項"
+
+
+4.2 在 c9.io，滑鼠右鍵點按你的作業資料夾 | New Terminal Here，
+    輸入下列指令上傳作業:
+git push
+輸入你的 GitHub 帳號與密碼
+
